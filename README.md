@@ -1,1 +1,0 @@
-# garnetos.github.io
