@@ -5,5 +5,7 @@
   "header_home": "Home",
   "header_documentation": "Documentation",
   "header_support": "Support",
-  "header_download": "Download"
+  "header_download": "Download",
+  "index_h1": "Something very <0>interesting</0>",
+  "index_cta": "Try it now"
 }

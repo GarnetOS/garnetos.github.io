@@ -1,0 +1,14 @@
+h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  color: $text-primary;
+  margin-bottom: 1rem;
+
+  strong {
+    font-weight: inherit;
+    background: -webkit-linear-gradient(45deg, #f0881f, #f0411f);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}

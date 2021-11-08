@@ -16,7 +16,8 @@ a {
 }
 
 .btn {
-  font-weight: 600;
+  display: inline-block;
+  font-weight: 500;
   letter-spacing: 0.25px;
   border-radius: 8px;
   transition: all 0.2s ease;
@@ -25,6 +26,11 @@ a {
 .btn-s {
   font-size: 14px;
   padding: 12px 22px;
+}
+
+.btn-l {
+  font-size: 16px;
+  padding: 12px 26px;
 }
 
 .btn-primary {
@@ -36,5 +42,17 @@ a {
   }
 }
 
+.btn-duotone {
+  background-color: lighten($primary, 35);
+  color: $primary;
+
+  &:hover {
+    background-color: lighten($primary, 33);
+    color: $primary;
+  }
+}
+
 @import "./Header";
 @import "./LanguageSwitcher";
+
+@import "./index";
