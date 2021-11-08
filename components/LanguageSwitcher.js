@@ -9,6 +9,7 @@ export default function LanguageSwitcher({ short }) {
   useEffect(() => {
     setComponent(
       <select
+        className={short ? "uppercase" : ""}
         value={value}
         onChange={(e) => {
           if (value != e.target.value && Object.keys(i18n.services.resourceStore.data).includes(e.target.value)) {

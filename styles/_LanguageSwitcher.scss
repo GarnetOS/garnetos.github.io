@@ -11,7 +11,10 @@ select {
   line-height: inherit;
   outline: none;
   color: $text-tertiary;
-  text-transform: uppercase;
+
+  &.uppercase {
+    text-transform: uppercase !important;
+  }
 }
 
 select::-ms-expand {

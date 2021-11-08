@@ -1,0 +1,17 @@
+footer {
+  padding: 2rem 0;
+
+  .container {
+    hr {
+      border: none;
+      border-top: 1px solid lightgray;
+      margin: 1rem 0;
+    }
+
+    div:not(.row) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+}
