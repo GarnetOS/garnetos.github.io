@@ -1,7 +1,5 @@
 import React from "react";
 import Link from "next/link";
-import Image from "next/image";
-import Logo from "/public/assets/logo.svg";
 import LanguageSwitcher from "./LanguageSwitcher";
 import { useTranslation } from "react-i18next";
 
@@ -12,7 +10,7 @@ export default function Header() {
     <header>
       <div className="container">
         <div className="logo-nav">
-          <Image src={Logo} alt="Logo" />
+          <img src="/assets/logo.svg" alt="Logo" />
           <nav>
             <ul>
               <li>
