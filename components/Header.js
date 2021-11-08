@@ -19,12 +19,12 @@ export default function Header() {
                 </Link>
               </li>
               <li>
-                <Link href="/">
+                <Link href="/documentation">
                   <a>{t("header_documentation")}</a>
                 </Link>
               </li>
               <li>
-                <Link href="/">
+                <Link href="/support">
                   <a>{t("header_support")}</a>
                 </Link>
               </li>
