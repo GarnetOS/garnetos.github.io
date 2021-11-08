@@ -1,0 +1,41 @@
+header {
+  padding: 2rem 0;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo-nav {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+
+      ul {
+        margin-left: 0.5rem;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        li {
+          margin-left: 0.75rem;
+          font-size: 16px;
+          font-weight: 500;
+          color: $text-tertiary;
+          transition: all 0.2s ease;
+
+          &:hover {
+            color: darken($text-tertiary, 27);
+          }
+        }
+      }
+    }
+
+    .cta-lang {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+  }
+}

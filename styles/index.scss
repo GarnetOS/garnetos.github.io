@@ -1,4 +1,7 @@
 $primary: #f0641f;
+$text-primary: #111133;
+$text-secondary: #444455;
+$text-tertiary: #666677;
 
 * {
   padding: 0;
@@ -11,3 +14,27 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+.btn {
+  font-weight: 600;
+  letter-spacing: 0.25px;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.btn-s {
+  font-size: 14px;
+  padding: 12px 22px;
+}
+
+.btn-primary {
+  background-color: $primary;
+  color: white;
+
+  &:hover {
+    background-color: darken($primary, 5);
+  }
+}
+
+@import "./Header";
+@import "./LanguageSwitcher";

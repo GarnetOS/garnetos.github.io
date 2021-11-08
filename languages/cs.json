@@ -1,3 +1,9 @@
 {
-  "helloworld": "Ahoj světe"
+  "helloworld": "Ahoj světe",
+  "en": "English",
+  "cs": "Čeština",
+  "header_home": "Hlavní stránka",
+  "header_documentation": "Dokumentace",
+  "header_support": "Podpora",
+  "header_download": "Stáhnout"
 }

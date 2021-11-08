@@ -14,7 +14,9 @@ export default function Home() {
 
       <main>
         <Header />
-        <h1>{t("helloworld")}</h1>
+        <div className="container">
+          <h1>{t("helloworld")}</h1>
+        </div>
       </main>
     </>
   );

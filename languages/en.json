@@ -1,3 +1,9 @@
 {
-  "helloworld": "Hello World"
+  "helloworld": "Hello World",
+  "en": "English",
+  "cs": "Čeština",
+  "header_home": "Home",
+  "header_documentation": "Documentation",
+  "header_support": "Support",
+  "header_download": "Download"
 }
