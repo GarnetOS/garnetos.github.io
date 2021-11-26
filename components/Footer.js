@@ -1,9 +1,9 @@
 import React from "react";
 import LanguageSwitcher from "./LanguageSwitcher";
 
-export default function Footer() {
+export default function Footer({ darkmode }) {
   return (
-    <footer>
+    <footer className={darkmode ? "dark" : "light"}>
       <div className="container">
         <div className="row">
           <div className="col-sm-3 col-6"></div>
@@ -14,7 +14,7 @@ export default function Footer() {
         <hr />
         <div>
           <img src="/assets/logo.svg" alt="Logo" />
-          <LanguageSwitcher short={false} />
+          <LanguageSwitcher short={false} darkmode={darkmode ? darkmode : false} />
         </div>
       </div>
     </footer>

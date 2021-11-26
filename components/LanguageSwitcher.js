@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 
-export default function LanguageSwitcher({ short }) {
+export default function LanguageSwitcher({ short, darkmode }) {
   const { t, i18n } = useTranslation();
   const [value, setValue] = useState(i18n.language);
   const [component, setComponent] = useState(null);
@@ -9,7 +9,7 @@ export default function LanguageSwitcher({ short }) {
   useEffect(() => {
     setComponent(
       <select
-        className={short ? "uppercase" : ""}
+        className={`${short ? "uppercase" : ""} ${darkmode ? "dark" : "light"}`}
         value={value}
         onChange={(e) => {
           if (value != e.target.value && Object.keys(i18n.services.resourceStore.data).includes(e.target.value)) {

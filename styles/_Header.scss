@@ -11,6 +11,10 @@ header {
       align-items: center;
       justify-content: flex-start;
 
+      img {
+        height: 50px;
+      }
+
       ul {
         margin-left: 0.5rem;
         list-style: none;
@@ -20,8 +24,8 @@ header {
 
         li {
           margin-left: 0.75rem;
-          font-size: 16px;
-          font-weight: 500;
+          font-size: 17px;
+          font-weight: 600;
           color: $text-tertiary;
           transition: all 0.2s ease;
 
@@ -36,6 +40,18 @@ header {
       display: flex;
       align-items: center;
       justify-content: flex-end;
+    }
+  }
+
+  &.dark {
+    background-color: $darkmode-background;
+
+    li {
+      color: $darkmode-text-secondary !important;
+
+      &:hover {
+        color: darken($darkmode-text-secondary, 10) !important;
+      }
     }
   }
 }

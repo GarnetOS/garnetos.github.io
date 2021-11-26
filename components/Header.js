@@ -3,11 +3,11 @@ import Link from "next/link";
 import LanguageSwitcher from "./LanguageSwitcher";
 import { useTranslation } from "react-i18next";
 
-export default function Header() {
+export default function Header({ darkmode }) {
   const { t, i18n } = useTranslation();
 
   return (
-    <header>
+    <header className={darkmode ? "dark" : "light"}>
       <div className="container">
         <div className="logo-nav">
           <img src="/assets/logo.svg" alt="Logo" />
@@ -35,7 +35,7 @@ export default function Header() {
           <Link href="/download">
             <a className="btn btn-s btn-primary">{t("header_download")}</a>
           </Link>
-          <LanguageSwitcher short={true} />
+          <LanguageSwitcher short={true} darkmode={darkmode ? darkmode : false} />
         </div>
       </div>
     </header>

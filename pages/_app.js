@@ -1,3 +1,4 @@
+import "../styles/bootstrap-grid.min.css";
 import "../styles/styles.scss";
 
 import i18n from "i18next";

@@ -15,6 +15,10 @@ select {
   &.uppercase {
     text-transform: uppercase !important;
   }
+
+  &.dark {
+    color: $darkmode-text-tertiary !important;
+  }
 }
 
 select::-ms-expand {

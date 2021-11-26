@@ -14,4 +14,9 @@ footer {
       justify-content: space-between;
     }
   }
+
+  &.dark {
+    background-color: $darkmode-background;
+    color: white;
+  }
 }

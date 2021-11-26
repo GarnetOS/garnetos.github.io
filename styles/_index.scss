@@ -1,69 +1,128 @@
 section.intro {
-  padding: 5rem 0 2rem;
+  background-color: $darkmode-background;
+  padding: 5rem 0 3rem;
 
   h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 800;
-    color: $text-primary;
+    background: -webkit-linear-gradient(45deg, $primary-gradient, $primary-gradient-alt);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 
-    strong {
-      font-weight: inherit;
-      background: -webkit-linear-gradient(45deg, #f0881f, #f0411f);
-      -webkit-background-clip: text;
-      background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
+  h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: $darkmode-text-primary;
+    margin-bottom: 1rem;
   }
 
   p {
-    margin: 1rem 0;
-    color: $text-secondary;
+    color: $darkmode-text-tertiary;
     font-size: 1.5rem;
     max-width: 700px;
     line-height: 1.5;
+    margin-bottom: 1.5rem;
+  }
+
+  .links {
+    display: flex;
+
+    a:not(:last-child) {
+      margin-right: 1rem;
+    }
+  }
+
+  .col-md-6:last-child {
+    display: flex;
+    align-items: center;
+
+    img {
+      max-width: 100%;
+    }
   }
 }
 
 section.about {
-  background: -webkit-linear-gradient(45deg, #f0881f, #f0411f);
-  color: white;
+  padding: 3rem 0;
+  background: $darkmode-background;
 
-  h2 {
-    font-size: 2.5rem;
-    font-weight: 800;
-    text-align: center;
-  }
-
-  .row {
-    margin-top: 2rem;
-
-    p {
-      margin-bottom: 1rem;
-      font-size: 18px;
-      line-height: 1.5;
+  .container {
+    h2 {
+      text-align: center;
+      font-size: 2.75rem;
+      color: $darkmode-text-primary;
+      margin-bottom: 1.5rem;
     }
-  }
 
-  > svg {
-    display: block;
+    .row {
+      .col-md-4 div {
+        padding: 2rem 1.5rem;
+        height: 100%;
+
+        h3 {
+          font-size: 2rem;
+          font-weight: 700;
+          color: $text-primary;
+          margin-bottom: 0.25rem;
+        }
+
+        p {
+          font-size: 1.25rem;
+          font-weight: 500;
+          color: $text-primary;
+        }
+      }
+
+      .col-md-4:first-child {
+        padding-left: 0 !important;
+        padding-right: 1rem !important;
+
+        div {
+          background: -webkit-linear-gradient(60deg, #60efff, #00ff87);
+          border-radius: 1rem;
+        }
+      }
+
+      .col-md-4:not(:first-child):not(:last-child) {
+        padding-left: 0.5rem !important;
+        padding-right: 0.5rem !important;
+        div {
+          background: -webkit-linear-gradient(60deg, #f9b16e, #f68080);
+          border-radius: 1rem;
+        }
+      }
+
+      .col-md-4:last-child {
+        padding-right: 0 !important;
+        padding-left: 1rem !important;
+        div {
+          background: -webkit-linear-gradient(60deg, #f8acff, #696eff);
+          border-radius: 1rem;
+        }
+      }
+    }
   }
 }
 
 section.download {
   padding: 3rem 0;
-  background-image: linear-gradient(42deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.7) 100%),
-    url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1920' height='200' preserveAspectRatio='none' viewBox='0 0 1920 200'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1037%26quot%3b)' fill='none'%3e%3cpath d='M -162.87934051317478%2c105 C -34.88%2c101.4 221.12%2c76.2 477.1206594868252%2c87 C 733.12%2c97.8 861.12%2c170 1117.1206594868252%2c159 C 1373.12%2c148 1501.12%2c42 1757.1206594868252%2c32 C 2013.12%2c22 2364.54%2c104.8 2397.1206594868254%2c109 C 2429.7%2c113.2 2015.42%2c64.2 1920%2c53' stroke='rgba(240%2c 100%2c 31%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -979.6507896429241%2c130 C -851.65%2c113.8 -595.65%2c51.8 -339.65078964292417%2c49 C -83.65%2c46.2 44.35%2c114.2 300.34921035707583%2c116 C 556.35%2c117.8 684.35%2c49.8 940.3492103570759%2c58 C 1196.35%2c66.2 1384.42%2c154.6 1580.349210357076%2c157 C 1776.28%2c159.4 1852.07%2c87.4 1920%2c70' stroke='rgba(240%2c 100%2c 31%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -805.2813908526834%2c69 C -677.28%2c78.2 -421.28%2c116.2 -165.2813908526835%2c115 C 90.72%2c113.8 218.72%2c55 474.7186091473165%2c63 C 730.72%2c71 858.72%2c160.4 1114.7186091473166%2c155 C 1370.72%2c149.6 1593.66%2c43.6 1754.7186091473166%2c36 C 1915.77%2c28.4 1886.94%2c100.8 1920%2c117' stroke='rgba(240%2c 100%2c 31%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -1136.532514782491%2c161 C -1008.53%2c137 -752.53%2c37.2 -496.5325147824909%2c41 C -240.53%2c44.8 -112.53%2c184.2 143.46748521750908%2c180 C 399.47%2c175.8 527.47%2c26 783.4674852175091%2c20 C 1039.47%2c14 1196.16%2c143.8 1423.467485217509%2c150 C 1650.77%2c156.2 1820.69%2c70.8 1920%2c51' stroke='rgba(240%2c 100%2c 31%2c 1)' stroke-width='2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1037'%3e%3crect width='1920' height='200' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+  background: $darkmode-background;
 
   .container {
+    padding: 3rem 0;
+    background: -webkit-linear-gradient(60deg, $primary-gradient, $primary-gradient-alt);
+    border-radius: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
 
     h2 {
       font-size: 2.5rem;
-      font-weight: 800;
+      font-weight: 700;
       text-align: center;
-      color: $text-primary;
+      color: $darkmode-text-primary;
     }
 
     a {
