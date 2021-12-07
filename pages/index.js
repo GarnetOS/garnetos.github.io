@@ -15,66 +15,56 @@ export default function Home() {
         <title>Hello World</title>
         <meta name="description" content="Official website for SomethingOS" />
       </Head>
-      <Header darkmode={true} />
-      <main>
-        <section className="intro">
-          <div className="container">
-            <div className="row">
-              <div className="col-md-6">
-                <h1>SomethingOS</h1>
-                <h2>{t("index_h2")}</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis urna placerat, congue purus sit amet, semper nunc.</p>
-                <div className="links">
-                  <Link href="/download">
-                    <a className="btn btn-l btn-primary">{t("index_cta")}</a>
-                  </Link>
-                  <Link href="/documentation">
-                    <a className="btn btn-l btn-outline">{t("header_documentation")}</a>
-                  </Link>
-                </div>
+      <Header />
+      <main className="bg-gray-900 py-12">
+        <section className="container max-w-screen-xl mx-auto">
+          <div className="container max-w-screen-xl mx-auto grid grid-cols-2">
+            <div>
+              <h1 className="text-4xl font-bold leading-snug mb-2 text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-blue-700">SomethingOS</h1>
+              <h2 className="text-5xl font-bold leading-snug text-white mb-4">{t("index_h2")}</h2>
+              <p className="text-gray-300 text-2xl mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis urna placerat, congue purus sit amet, semper nunc.</p>
+              <div className="links">
+                <Link href="/download">
+                  <a className="btn btn-l btn-primary mr-4">{t("index_cta")}</a>
+                </Link>
+                <Link href="/documentation">
+                  <a className="btn btn-l btn-secondary">{t("header_documentation")}</a>
+                </Link>
               </div>
-              <div className="col-md-6">
-                <img src="/assets/undraw_os.svg" alt="Illustration" />
-              </div>
+            </div>
+            <div className="flex items-center">
+              <img className="w-full" src="/assets/undraw_os.svg" alt="Illustration" />
             </div>
           </div>
         </section>
-        <section className="about">
-          <div className="container">
-            <h2>Why SomethingOS?</h2>
-            <div className="row">
-              <div className="col-md-4">
-                <div>
-                  <h3>
-                    <FontAwesomeIcon icon={faCog} />
-                  </h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lacinia ornare finibus. Nunc vel augue massa.</p>
-                </div>
-              </div>
-              <div className="col-md-4">
-                <div>
-                  <h3>
-                    <FontAwesomeIcon icon={faCog} />
-                  </h3>
-                  <p>Curabitur non orci urna. Ut ac augue ut dolor ultrices bibendum in eget felis.</p>
-                </div>
-              </div>
-              <div className="col-md-4">
-                <div>
-                  <h3>
-                    <FontAwesomeIcon icon={faCog} />
-                  </h3>
-                  <p>Vestibulum a blandit nisl. Nam tristique eget neque id sollicitudin. Phasellus eu ex erat.</p>
-                </div>
-              </div>
+        <section className="container max-w-screen-xl mx-auto py-20">
+          <h2 className="text-4xl text-center font-bold text-white mb-6">Why SomethingOS?</h2>
+          <div className="grid grid-cols-3 gap-x-6">
+            <div className="px-6 py-8 rounded-3xl bg-gradient-to-r from-green-400 to-blue-400">
+              <h3 className="text-3xl mb-2">
+                <FontAwesomeIcon icon={faCog} />
+              </h3>
+              <p className="text-xl font-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lacinia ornare finibus. Nunc vel augue massa.</p>
+            </div>
+            <div className="px-6 py-8 rounded-3xl bg-gradient-to-r from-yellow-400 to-red-400">
+              <h3 className="text-3xl mb-2">
+                <FontAwesomeIcon icon={faCog} />
+              </h3>
+              <p className="text-xl font-medium">Curabitur non orci urna. Ut ac augue ut dolor ultrices bibendum in eget felis.</p>
+            </div>
+            <div className="px-6 py-8 rounded-3xl bg-gradient-to-r from-pink-400 to-purple-400">
+              <h3 className="text-3xl mb-2">
+                <FontAwesomeIcon icon={faCog} />
+              </h3>
+              <p className="text-xl font-medium">Vestibulum a blandit nisl. Nam tristique eget neque id sollicitudin. Phasellus eu ex erat.</p>
             </div>
           </div>
         </section>
-        <section className="download">
-          <div className="container">
-            <h2>Download Now</h2>
+        <section className="container max-w-screen-xl mx-auto">
+          <div className="p-12 flex flex-col items-center bg-gradient-to-r from-blue-500 to-blue-800 rounded-3xl">
+            <h2 className="text-4xl text-white font-bold text-center">Download Now</h2>
             <Link href="/download">
-              <a className="btn btn-s btn-secondary">.iso | 2,82 GB</a>
+              <a className="btn btn-s btn-secondary mt-3">.iso | 2,82 GB</a>
             </Link>
           </div>
         </section>
