@@ -1,20 +1,20 @@
 import React from "react";
 import LanguageSwitcher from "./LanguageSwitcher";
 
-export default function Footer({ darkmode }) {
+export default function Footer() {
   return (
-    <footer className={darkmode ? "dark" : "light"}>
-      <div className="container">
-        <div className="row">
-          <div className="col-sm-3 col-6"></div>
-          <div className="col-sm-3 col-6"></div>
-          <div className="col-sm-3 col-6"></div>
-          <div className="col-sm-3 col-6"></div>
+    <footer className="bg-gray-900 py-8">
+      <div className="container max-w-screen-xl mx-auto">
+        <div className="grid grid-cols-4">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
         </div>
-        <hr />
-        <div>
+        <hr className="border-t-1 border-gray-600 my-4" />
+        <div className="flex items-center justify-between">
           <img src="/assets/logo.svg" alt="Logo" />
-          <LanguageSwitcher short={false} darkmode={darkmode ? darkmode : false} />
+          <LanguageSwitcher short={false} />
         </div>
       </div>
     </footer>
