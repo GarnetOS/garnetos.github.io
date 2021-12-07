@@ -8,7 +8,7 @@ export default function Header() {
 
   return (
     <header className="py-8 bg-gray-900">
-      <div className="container max-w-screen-xl mx-auto flex justify-between">
+      <div className="px-4 container max-w-screen-xl mx-auto flex justify-between">
         <div className="flex items-center justify-start">
           <img src="/assets/logo.svg" alt="Logo" className="h-12" />
           <nav className="ml-2 flex items-center justify-start">

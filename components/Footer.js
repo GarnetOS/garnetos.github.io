@@ -4,7 +4,7 @@ import LanguageSwitcher from "./LanguageSwitcher";
 export default function Footer() {
   return (
     <footer className="bg-gray-900 py-8">
-      <div className="container max-w-screen-xl mx-auto">
+      <div className="px-4 container max-w-screen-xl mx-auto">
         <div className="grid grid-cols-4">
           <div></div>
           <div></div>
