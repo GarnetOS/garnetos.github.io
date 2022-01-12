@@ -1,7 +1,5 @@
 import Head from "next/head";
 import Link from "next/link";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
 import { useTranslation } from "react-i18next";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCog } from "@fortawesome/free-solid-svg-icons";
@@ -12,10 +10,9 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Hello World</title>
-        <meta name="description" content="Official website for SomethingOS" />
+        <title>{t("title_home")}</title>
+        <meta name="description" content="Download SomethingOS" />
       </Head>
-      <Header />
       <main className="bg-slate-900 py-12">
         <section className="px-4 container max-w-screen-xl mx-auto">
           <div className="sm:grid sm:grid-cols-2">
@@ -69,7 +66,6 @@ export default function Home() {
           </div>
         </section>
       </main>
-      <Footer darkmode={true} />
     </>
   );
 }

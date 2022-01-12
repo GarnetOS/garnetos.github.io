@@ -5,6 +5,8 @@ import LanguageDetector from "i18next-browser-languagedetector";
 import { initReactI18next } from "react-i18next";
 import en from "../languages/en.json";
 import cs from "../languages/cs.json";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 i18n
   .use(LanguageDetector)
@@ -37,7 +39,13 @@ i18n
   });
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />;
+  return (
+    <>
+      <Header />
+      <Component {...pageProps} />
+      <Footer />
+    </>
+  );
 }
 
 export default MyApp;
