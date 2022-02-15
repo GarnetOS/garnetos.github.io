@@ -1,0 +1,44 @@
+import React from "react";
+import Link from "next/link";
+import { useTranslation } from "react-i18next";
+
+export default function Menu() {
+  const { t, i18n } = useTranslation();
+
+  const categories = [
+    { title: t("category_gettingstarted"), path: "getting-started" },
+    { title: t("category_uninstall"), path: "uninstall" },
+  ];
+
+  const articles = [
+    {
+      title: t("downloading"),
+      path: "downloading",
+      category: "getting-started",
+    },
+    {
+      title: t("installing"),
+      path: "installing",
+      category: "getting-started",
+    },
+  ];
+
+  const getArticles = (category) => articles.filter((a) => a.category === category);
+
+  return (
+    <aside className="col-span-1">
+      {categories.map((category) => {
+        return (
+          <>
+            <h2 className="uppercase font-light text-slate-50 mb-2 first:mt-0 mt-4">{category.title}</h2>
+            {getArticles(category.path).map((article) => (
+              <Link href={`/documentation/${category.path}/${article.path}`} key={article.path}>
+                <a className="block ml-1 mb-1 text-lg text-slate-100 hover:underline">{article.title}</a>
+              </Link>
+            ))}
+          </>
+        );
+      })}
+    </aside>
+  );
+}
