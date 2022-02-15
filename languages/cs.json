@@ -4,11 +4,14 @@
   "cs": "Čeština",
   "title_home": "Hlavní stránka | SomethingOS",
   "title_download": "Stáhnout | SomethingOS",
+  "title_support": "Podpora | SomethingOS",
   "header_home": "Hlavní stránka",
   "header_documentation": "Dokumentace",
   "header_support": "Podpora",
   "header_download": "Stáhnout",
   "index_h2": "Systém, který je perfektní pro každého",
   "index_cta": "Stáhnout nyní",
-  "download_h1": "Stáhnout SomethingOS"
+  "download_h1": "Stáhnout SomethingOS",
+  "support_h1": "Podpora",
+  "support_p": "Kontaktujte nás přes support@something.os"
 }

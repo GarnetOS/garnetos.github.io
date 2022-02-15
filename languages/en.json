@@ -4,11 +4,14 @@
   "cs": "Čeština",
   "title_home": "Home | SomethingOS",
   "title_download": "Download | SomethingOS",
+  "title_support": "Support | SomethingOS",
   "header_home": "Home",
   "header_documentation": "Documentation",
   "header_support": "Support",
   "header_download": "Download",
   "index_h2": "Perfect operating system for anyone",
   "index_cta": "Try it now",
-  "download_h1": "Download SomethingOS"
+  "download_h1": "Download SomethingOS",
+  "support_h1": "Support",
+  "support_p": "Contact us at support@something.os"
 }
