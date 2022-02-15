@@ -29,14 +29,14 @@ export default function Menu() {
     <aside className="col-span-1">
       {categories.map((category) => {
         return (
-          <>
-            <h2 className="uppercase font-light text-slate-50 mb-2 first:mt-0 mt-4">{category.title}</h2>
+          <div key={category.path} className="first:mt-0 mt-4 mb-2 last:mb-0">
+            <h2 className="uppercase font-light text-slate-50">{category.title}</h2>
             {getArticles(category.path).map((article) => (
-              <Link href={`/documentation/${category.path}/${article.path}`} key={article.path}>
+              <Link href={`/documentation/${i18n.language}/${article.path}`} key={article.path}>
                 <a className="block ml-1 mb-1 text-lg text-slate-100 hover:underline">{article.title}</a>
               </Link>
             ))}
-          </>
+          </div>
         );
       })}
     </aside>

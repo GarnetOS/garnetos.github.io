@@ -9,7 +9,7 @@ export default function Documentation() {
   return (
     <>
       <Head>
-        <title>{t("title_download")}</title>
+        <title>{t("title_documentation")}</title>
         <meta name="description" content="Official website for SomethingOS" />
       </Head>
       <main className="bg-slate-900 py-12">
