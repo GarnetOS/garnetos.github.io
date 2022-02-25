@@ -16,9 +16,6 @@ export default function Documentation() {
         <h1 className="text-slate-100 text-5xl text-center font-bold">{t("documentation_h1")}</h1>
         <section className="grid grid-cols-4 container max-w-screen-xl mx-auto">
           <Menu />
-          <article className="col-span-3 px-4">
-            <h2>article</h2>
-          </article>
         </section>
       </main>
     </>

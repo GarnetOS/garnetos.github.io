@@ -13,5 +13,10 @@
   "index_cta": "Stáhnout nyní",
   "download_h1": "Stáhnout SomethingOS",
   "support_h1": "Podpora",
-  "support_p": "Kontaktujte nás přes support@something.os"
+  "support_p": "Kontaktujte nás přes support@something.os",
+  "documentation_h1": "Dokumentace",
+  "category_gettingstarted": "Začínáme",
+  "category_uninstall": "Odinstalace",
+  "article_downloading": "Stažení",
+  "article_installing": "Instalace"
 }

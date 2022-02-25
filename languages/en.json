@@ -13,5 +13,10 @@
   "index_cta": "Try it now",
   "download_h1": "Download SomethingOS",
   "support_h1": "Support",
-  "support_p": "Contact us at support@something.os"
+  "support_p": "Contact us at support@something.os",
+  "documentation_h1": "Documentation",
+  "category_gettingstarted": "Getting started",
+  "category_uninstall": "Uninstalling",
+  "article_downloading": "Downloading",
+  "article_installing": "Installation"
 }
