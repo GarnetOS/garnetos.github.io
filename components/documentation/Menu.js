@@ -12,12 +12,12 @@ export default function Menu() {
 
   const articles = [
     {
-      title: t("downloading"),
+      title: t("article_downloading"),
       path: "downloading",
       category: "getting-started",
     },
     {
-      title: t("installing"),
+      title: t("article_installing"),
       path: "installing",
       category: "getting-started",
     },
