@@ -1,0 +1,10 @@
+pull_request_rules:
+  - name: Automatic merge on approval
+    conditions:
+      - check-success=build (14.x)
+      - check-success=SonarCloud Code Analysis
+      - check-success=SonarCloud
+      - author=depfu[bot]
+    actions:
+      merge:
+        method: merge
