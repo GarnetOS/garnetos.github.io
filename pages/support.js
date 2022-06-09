@@ -11,10 +11,10 @@ export default function Support() {
         <title>{t("title_support")}</title>
         <meta name="description" content="Official website for GarnetOS" />
       </Head>
-      <main className="bg-slate-900 py-12">
+      <main className="bg-gray-900 py-12">
         <section className="px-4 container max-w-screen-xl mx-auto">
-          <h1 className="text-slate-100 text-5xl text-center font-bold">{t("support_h1")}</h1>
-          <p className="text-slate-100 text-lg">{t("support_p")}</p>
+          <h1 className="text-gray-100 text-5xl text-center font-bold">{t("support_h1")}</h1>
+          <p className="text-gray-100 text-lg">{t("support_p")}</p>
         </section>
       </main>
     </>

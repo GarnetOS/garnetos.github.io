@@ -30,10 +30,10 @@ export default function Menu() {
       {categories.map((category) => {
         return (
           <div key={category.path} className="first:mt-0 mt-4 mb-2 last:mb-0">
-            <h2 className="uppercase font-light text-slate-50">{category.title}</h2>
+            <h2 className="uppercase font-light text-gray-50">{category.title}</h2>
             {getArticles(category.path).map((article) => (
               <Link href={`/documentation/${i18n.language}/${article.path}`} key={article.path}>
-                <a className="block ml-1 mb-1 text-lg text-slate-100 hover:underline">{article.title}</a>
+                <a className="block ml-1 mb-1 text-lg text-gray-100 hover:underline">{article.title}</a>
               </Link>
             ))}
           </div>

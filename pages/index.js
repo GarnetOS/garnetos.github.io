@@ -13,13 +13,13 @@ export default function Home() {
         <title>{t("title_home")}</title>
         <meta name="description" content="Download GarnetOS" />
       </Head>
-      <main className="bg-slate-900 py-12">
+      <main className="bg-gray-900 py-12">
         <section className="px-4 container max-w-screen-xl mx-auto">
           <div className="sm:grid sm:grid-cols-2">
             <div>
-              <h1 className="text-4xl font-bold leading-snug mb-2 text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-blue-700">GarnetOS</h1>
+              <h1 className="text-4xl font-bold leading-snug mb-2 text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-red-800">GarnetOS</h1>
               <h2 className="text-5xl font-bold leading-snug text-white mb-4">{t("index_h2")}</h2>
-              <p className="text-slate-300 text-2xl mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis urna placerat, congue purus sit amet, semper nunc.</p>
+              <p className="text-gray-300 text-2xl mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis urna placerat, congue purus sit amet, semper nunc.</p>
               <div className="links">
                 <Link href="/download">
                   <a className="btn btn-l btn-primary mb-4 mr-4">{t("index_cta")}</a>
@@ -30,7 +30,7 @@ export default function Home() {
               </div>
             </div>
             <div className="flex items-center">
-              <img className="w-full" src="/assets/undraw_os.svg" alt="Illustration" />
+              <img className="w-full" src="/assets/undraw.svg" alt="Illustration" />
             </div>
           </div>
         </section>
@@ -58,7 +58,7 @@ export default function Home() {
           </div>
         </section>
         <section className="px-4 container max-w-screen-xl mx-auto">
-          <div className="p-12 flex flex-col items-center bg-gradient-to-r from-blue-500 to-blue-800 rounded-3xl">
+          <div className="p-12 flex flex-col items-center bg-gradient-to-r from-red-500 to-red-800 rounded-3xl">
             <h2 className="text-4xl text-white font-bold text-center">Download Now</h2>
             <Link href="/download">
               <a className="btn btn-s btn-secondary mt-3">.iso | 2,82 GB</a>

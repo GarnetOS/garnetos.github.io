@@ -16,10 +16,10 @@
   }
 
   .btn-primary {
-    @apply text-white bg-blue-700 border-transparent  hover:bg-blue-800;
+    @apply text-white bg-red-700 border-transparent  hover:bg-red-800;
   }
 
   .btn-secondary {
-    @apply text-white bg-transparent border-white hover:bg-slate-100 hover:text-slate-800;
+    @apply text-white bg-transparent border-white hover:bg-gray-100 hover:text-gray-800;
   }
 }

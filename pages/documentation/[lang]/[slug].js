@@ -16,7 +16,7 @@ export default function Documentation({ content }) {
         <title>{t("title_documentation")}</title>
         <meta name="description" content="Official website for GarnetOS" />
       </Head>
-      <main className="bg-slate-900 py-12">
+      <main className="bg-gray-900 py-12">
         <section className="grid grid-cols-4 container max-w-screen-xl mx-auto">
           <Menu />
           <article className="col-span-3 px-4 prose prose-invert lg:prose-lg" dangerouslySetInnerHTML={{ __html: marked(content) }}></article>
