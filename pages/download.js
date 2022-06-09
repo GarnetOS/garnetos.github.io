@@ -9,7 +9,7 @@ export default function Download() {
     <>
       <Head>
         <title>{t("title_download")}</title>
-        <meta name="description" content="Official website for SomethingOS" />
+        <meta name="description" content="Official website for GarnetOS" />
       </Head>
       <main className="bg-slate-900 py-12">
         <section className="px-4 container max-w-screen-xl mx-auto">

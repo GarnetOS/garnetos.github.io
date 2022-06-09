@@ -10,7 +10,7 @@ export default function Documentation() {
     <>
       <Head>
         <title>{t("title_documentation")}</title>
-        <meta name="description" content="Official website for SomethingOS" />
+        <meta name="description" content="Official website for GarnetOS" />
       </Head>
       <main className="bg-slate-900 py-12">
         <h1 className="text-slate-100 text-5xl text-center font-bold">{t("documentation_h1")}</h1>

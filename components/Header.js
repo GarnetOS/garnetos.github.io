@@ -14,7 +14,7 @@ export default function Header() {
     <header className="py-8 bg-slate-900">
       <div className="px-4 container max-w-screen-xl mx-auto flex justify-between">
         <div className="flex items-center justify-start">
-          <img src="/assets/logo.svg" alt="Logo" className="h-12" />
+          <img src="/assets/logo.png" alt="Logo" className="h-24 w-auto" />
         </div>
         <div className={`${navHidden ? "hidden" : "flex"} flex-col md:flex-row items-center md:justify-end md:flex absolute md:static z-10 bg-slate-900 top-24 left-0 right-0 pb-12 md:pb-0 border-b border-slate-500 md:border-none`}>
           <nav className="mr-4 flex items-center justify-start flex-col md:flex-row">

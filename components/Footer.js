@@ -13,7 +13,7 @@ export default function Footer() {
         </div>
         <hr className="border-t-1 border-slate-600 my-4" />
         <div className="flex items-center justify-between">
-          <img src="/assets/logo.svg" alt="Logo" />
+          <img src="/assets/logo.png" alt="Logo" className="h-20 w-auto" />
           <LanguageSwitcher short={false} />
         </div>
       </div>
